@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProectTwo.User"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProectTwo"
+        mc:Ignorable="d"
+        Title="User" Height="450" Width="800" Background="Orange">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+    
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="20" Background="White"  Text="ФИО"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Background="White" Text="Документы"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20" Background="White" Text="Дата рождения"/>
+        <Button Grid.Row="1" Grid.Column="1" Width="150" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Click="ReturnClick" Background="OrangeRed">Вернуться</Button>
+        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20" Background="White" Width="200" Height="15" x:Name="fioBlock" />
+        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20" Background="White" Width="200" Height="15" x:Name="yearBlock"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20" Background="White" Width="200" Height="15" x:Name="documentBlock"/>
+    </Grid>
+</Window>
